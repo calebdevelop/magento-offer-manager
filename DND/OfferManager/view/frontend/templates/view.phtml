@@ -1,0 +1,22 @@
+<?php
+/** @var $block \DND\OfferManager\Block\Frontend\Headband\Template */
+?>
+<div id="dnd-headband-wrapper" data-bind="scope: 'dnd_headband'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <script type="text/x-magento-init">
+    {
+        "#dnd-headband-wrapper": {
+            "Magento_Ui/js/core/app": {
+               "components": {
+                    "dnd_headband": {
+                        "component": "DND_OfferManager/js/headband",
+                        "template" : "DND_OfferManager/headband",
+                        "category_id":<?= $block->getCurrentCategory() ?>
+                    }
+                }
+            }
+        }
+    }
+    </script>
+</div>
+

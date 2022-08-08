@@ -1,0 +1,15 @@
+<div class="owl-carousel" afterRender="carousel">
+<!-- ko foreach: { data: getData(), as: 'item' } -->
+<div class="headband-inner" style="width: 100%">
+    <div data-bind="attr: {class: 'item img-wrapper'}">
+        <img data-bind="attr: {src: item.media}"/>
+    </div>
+    <div data-bind="attr: {class: 'item description-wrapper'}">
+        <span data-bind="text: item.description"></span>
+    </div>
+    <div data-bind="attr: {class: 'item link-inner'}">
+        <a data-bind="attr: {class: 'link-btn', href: item.link, target: '_blank'}">En savoir plus</a>
+    </div>
+</div>
+<!-- /ko -->
+</div>

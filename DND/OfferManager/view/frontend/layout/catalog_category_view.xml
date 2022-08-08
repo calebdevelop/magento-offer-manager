@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="DND_OfferManager/css/owl.carousel.css"/>
+        <css src="DND_OfferManager/css/dnd.css"/>
+    </head>
+    <body>
+        <referenceContainer name="columns.top">
+            <referenceContainer name="category.view.container">
+                <block class="DND\OfferManager\Block\Frontend\Headband\Template"
+                       name="dnd.offer_view"
+                       template="DND_OfferManager::view.phtml"
+                       before="category.description"
+                />
+            </referenceContainer>
+        </referenceContainer>
+    </body>
+</page>
